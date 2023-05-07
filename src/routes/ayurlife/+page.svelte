@@ -2,8 +2,6 @@
   import HoverBox from "./../../components/HoverBox.svelte";
   import Banner from "../../components/Banner.svelte";
   import Navbar from "../../components/Navbar.svelte";
-  import logo from "/src/lib/assets/ayur-life.png";
-  import background from "/src/lib/assets/ayurplant.png";
   import VideoTile from "../../components/VideoTile.svelte";
   import ContactForm from "../../components/ContactForm.svelte";
   import Footer from "../../components/Footer.svelte";
@@ -24,12 +22,12 @@
       <div class="flex w-full h-full" slot="background">
         <img
           class="object-cover w-full h-full lg:w-2/3 brightness-75"
-          src="/src/lib/assets/ayurplant.png"
+          src="ayur/ayurplant.png"
           alt=""
         />
         <img
           class="hidden object-cover w-1/3 h-full lg:block brightness-75"
-          src="/src/lib/assets/ayurmix.png"
+          src="ayur/ayurmix.png"
           alt=""
         />
       </div>
@@ -49,10 +47,10 @@
           >
         </div>
       </div>
-      <Navbar slot="header" {logo} title="AYUR LIFE">
+      <Navbar slot="header" logo="ayur/ayur-life.png" title="AYUR LIFE">
         <ul
           slot="options"
-          class="flex items-center justify-center gap-5 font-semibold"
+          class="items-center justify-center hidden gap-5 font-semibold md:flex"
         >
           <li>Placeholder</li>
           <li>Placeholder</li>
@@ -79,23 +77,23 @@
   <!-- the hover tiles  -->
   <section class="container mx-auto my-10 mb-20">
     <h4
-      class="w-1/2 p-1 mx-auto my-8 text-xl font-semibold text-center border-b-4 md:text-3xl border-ayur-primary text-ayur-primary"
+      class="p-1 mx-auto my-8 text-xl font-semibold text-center border-b-4 w-fit md:text-3xl border-ayur-primary text-ayur-primary"
     >
       The Wonder Life Family
     </h4>
     <div class="flex w-full gap-2 p-3 md:mx-auto md:w-2/3">
       <HoverBox
-        image="/src/lib/assets/ayurmix.png"
+        image="ayur/ayurmix.png"
         beforeText="1"
         afterText="Ayur Life"
       />
       <HoverBox
-        image="/src/lib/assets/ayurmix.png"
+        image="ayur/ayurmix.png"
         beforeText="2"
         afterText="Placeholder"
       />
       <HoverBox
-        image="/src/lib/assets/ayurmix.png"
+        image="ayur/ayurmix.png"
         beforeText="3"
         afterText="Placeholder"
       />
@@ -107,7 +105,7 @@
       <div class="w-full h-full bg-gray-900" slot="background">
         <img
           class="object-cover w-full h-full"
-          src="/src/lib/assets/plant.png"
+          src="ayur/plant.png"
           alt=""
         />
       </div>
@@ -146,16 +144,20 @@
     <div
       class="w-full px-6 py-6 border-2 rounded-md shadow-md bg-opacity-70 bg-ayur-primary"
     >
-      <h3 class="m-6 text-3xl font-semibold text-left text-white border-b-2">
-        Discover More
-      </h3>
+      <div class="flex items-end mb-6 text-3xl font-semibold text-left text-white border-b-2">
+        <span>Discover</span>
+        <span class="ml-auto text-base cursor-pointer group">
+          More
+          <i class="w-0 transition-all opacity-0 group-hover:w-5 fas fa-angle-double-right group-hover:opacity-100"></i>
+        </span>
+      </div>
       <VideoTile primaryVideo={videos[0]} videos={videos.slice(1, 5)} />
     </div>
   </section>
   <section class="container p-6 mx-auto my-10">
     <div class="w-full">
       <h3
-        class="my-8 text-3xl font-bold border-b-2 border-ayur-primary text-ayur-primary"
+        class="my-10 text-3xl font-bold border-b-2 border-ayur-primary text-ayur-primary"
       >
         Reach us
       </h3>
@@ -165,7 +167,7 @@
         </span>
         <div slot="body">
           <Icon
-            label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
+            label="Lorem ipsum dolor sit amet, consectetur adipiscing eli"
           >
             <i class="fa-solid fa-location-dot" />
           </Icon>
@@ -194,11 +196,14 @@
     </div>
   </section>
   <section>
+    <img class="object-cover w-2/3 lg:w-1/3" src="ayur/decor.png" alt="">
+  </section>
+  <section >
     <Footer>
-      <div class="grid w-full gap-20 m-3 mb-6 md:flex">
+      <div class="grid w-full gap-20 mb-6 md:m-3 md:flex">
         <div class="w-full">
           <h3 class="my-6 text-2xl font-semibold">Ayur Life</h3>
-          <p>
+          <p class="max-w-full">
             Lorem ipsum dolor sit amet, consecteturHome adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus
             id interdum velit laoreet id. Scelerisque varius morbi enim nunc.
