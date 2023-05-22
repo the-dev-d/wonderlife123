@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import HoverBox from "./../../components/HoverBox.svelte";
   import Banner from "../../components/Banner.svelte";
   import Navbar from "../../components/Navbar.svelte";
@@ -6,6 +6,12 @@
   import ContactForm from "../../components/ContactForm.svelte";
   import Footer from "../../components/Footer.svelte";
   import Icon from "../../components/Icon.svelte";
+  import { onMount } from "svelte";
+
+  onMount(()=> {
+    const fav = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    fav.href = "/ayur/ayur-life.webp";
+  })
 
   const videos = [
     "rmPp_P_Gqhw",
@@ -15,19 +21,18 @@
     "9pH9NI8Fubs",
   ];
 </script>
-
 <div>
   <main class="w-full h-[70vh] md:h-[90vh]">
     <Banner>
       <div class="flex w-full h-full" slot="background">
         <img
           class="object-cover w-full h-full lg:w-2/3 brightness-75"
-          src="ayur/ayurplant.png"
+          src="ayur/ayurplant.webp"
           alt=""
         />
         <img
           class="hidden object-cover w-1/3 h-full lg:block brightness-75"
-          src="ayur/ayurmix.png"
+          src="ayur/ayurmix.webp"
           alt=""
         />
       </div>
@@ -47,7 +52,7 @@
           >
         </div>
       </div>
-      <Navbar slot="header" logo="ayur/ayur-life.png" title="AYUR LIFE">
+      <Navbar slot="header" logo="ayur/ayur-life.webp" title="AYUR LIFE">
         <ul
           slot="options"
           class="items-center justify-center hidden gap-5 font-semibold md:flex"
@@ -81,17 +86,17 @@
     </h4>
     <div class="flex w-full gap-2 p-3 md:mx-auto md:w-2/3">
       <HoverBox
-        image="ayur/ayurmix.png"
+        image="ayur/ayurmix.webp"
         beforeText="1"
         afterText="Ayur Life"
       />
       <HoverBox
-        image="ayur/ayurmix.png"
+        image="ayur/ayurmix.webp"
         beforeText="2"
         afterText="Nature Life"
       />
       <HoverBox
-        image="ayur/ayurmix.png"
+        image="ayur/ayurmix.webp"
         beforeText="3"
         afterText="Holistic Life"
       />
@@ -103,7 +108,7 @@
       <div class="w-full h-full bg-gray-900" slot="background">
         <img
           class="object-cover w-full h-full"
-          src="ayur/plant.png"
+          src="ayur/plant.webp"
           alt=""
         />
       </div>
@@ -156,8 +161,9 @@
         Reach us
       </h3>
       <ContactForm>
-        <span slot="head">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
+        <span class="grid" slot="head">
+          <h4 class="font-semibold text-ayur-primary">Connect with Us</h4>
+          <p class="text-sm text-ayur-text">Your Wellness Journey Begins Here. Reach out to AyurLife Today!</p>
         </span>
         <div slot="body">
           <Icon
@@ -168,7 +174,7 @@
           <Icon label="+91 9632038278, +91 9633136484">
             <i class="fa-solid fa-mobile-screen-button" />
           </Icon>
-          <Icon label="contact@wonderlife123.com">
+          <Icon label="contact@wonderlife123.in">
             <i class="fa-solid fa-envelope" />
           </Icon>
         </div>
@@ -190,7 +196,7 @@
     </div>
   </section>
   <section>
-    <img class="object-cover w-2/3 lg:w-1/3" src="ayur/decor.png" alt="">
+    <img class="object-cover w-2/3 lg:w-1/3" src="ayur/decor.webp" alt="">
   </section>
   <section >
     <Footer>
@@ -208,7 +214,7 @@
         <div class="w-full">
           <h3 class="my-6 text-2xl font-semibold">Quick Links</h3>
           <ul class="grid gap-3 list-none">
-            <a href="#"><li >Home</li></a>
+            <a href="/"><li >Home</li></a>
             <!-- <li>placeholder</li>
             <li>placeholder</li>
             <li>placeholder</li> -->
