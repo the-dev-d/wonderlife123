@@ -32,9 +32,9 @@
         />
       </div>
       <div slot="foreground" class="grid content-center h-full px-6 md:w-1/2">
-        <h3 class="text-xl text-white md:text-5xl">nunc id cursus metus</h3>
-        <h5 class="my-3 text-lg text-gray-200 md:text-xl">
-          massa enim nunc mattis enim ut
+        <h3 class="text-xl text-white md:text-5xl">Ayur Life</h3>
+        <h5 class="my-3 text-gray-200 md:text-xl">
+          Ayurveda Harnessing Nature's Wisdom for Optimal Health and Balance.
         </h5>
         <div class="grid gap-6 my-6 w-fit md:flex md:w-full">
           <button
@@ -52,9 +52,9 @@
           slot="options"
           class="items-center justify-center hidden gap-5 font-semibold md:flex"
         >
+          <!-- <li>Placeholder</li>
           <li>Placeholder</li>
-          <li>Placeholder</li>
-          <li>Placeholder</li>
+          <li>Placeholder</li> -->
         </ul>
       </Navbar>
     </Banner>
@@ -65,11 +65,9 @@
     <div class="w-full py-6 mx-auto lg:w-2/3">
       <h3 class="w-full mb-6 text-3xl font-semibold text-center">Ayur Life</h3>
       <p class="m-6 text-center font-calligraffi">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus
-        sem est, a faucibus orci aliquet a. Praesent ultrices nibh vel orci
-        semper varius. Ut varius, diam eu vestibulum lacinia, eros libero
-        gravida odio, vel venenatis ipsum nunc quis nulla. Nulla ac libero vitae
-        felis
+        AyurLife combines traditional Ayurvedic knowledge with modern advancements, offering a comprehensive range of therapies, treatments, 
+        and personalized wellness programs. Our team of highly skilled Ayurvedic practitioners, therapists, and wellness experts are dedicated to guiding 
+        individuals on a journey towards optimal health and vitality.
       </p>
     </div>
   </section>
@@ -90,12 +88,12 @@
       <HoverBox
         image="ayur/ayurmix.png"
         beforeText="2"
-        afterText="Placeholder"
+        afterText="Nature Life"
       />
       <HoverBox
         image="ayur/ayurmix.png"
         beforeText="3"
-        afterText="Placeholder"
+        afterText="Holistic Life"
       />
     </div>
   </section>
@@ -115,32 +113,28 @@
       >
         <div class="container w-full mx-auto my-16 md:px-10">
           <h2 class="text-2xl font-semibold border-b-2 md:text-4xl">
-            Who are we ?
+            Why Ayur Life ?
           </h2>
           <div class="w-full mt-20 lg:w-1/2">
-            <h3
+            <!-- <h3
               class="text-2xl font-semibold text-center lg:text-left lg:text-3xl"
             >
               Lorem ipsum dolor sit amet consectetur.
-            </h3>
+            </h3> -->
             <p class="mt-10 text-center lg:text-left">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero est
-              maxime, numquam adipisci totam quia quam nesciunt deleniti iure
-              blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Deserunt assumenda nemo quo eligendi! Porro, facilis tempora
-              quaerat repellat temporibus sunt est itaque, quis nisi illum
-              dolorum soluta, a aperiam quos. Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Molestias facere consequuntur
-              suscipit tempora cupiditate doloremque architecto laborum!
-              Explicabo officia voluptatibus dolores repudiandae iure. Nisi
-              possimus modi placeat eius, voluptates inventore!
+              AyurLife combines traditional Ayurvedic knowledge with modern advancements, offering a comprehensive range of therapies, treatments, and personalized wellness programs. 
+              Our team of highly skilled Ayurvedic practitioners, therapists, and wellness experts are dedicated to guiding individuals on a journey towards optimal health and vitality.
+            </p>
+            <p class="mt-5">
+              At AyurLife, we are committed to upholding the principles of Ayurveda, while adapting to the unique needs and challenges of modern life. We strive to be a trusted partner in your wellness journey, 
+              empowering you with the knowledge and tools to achieve optimal health, vitality, and inner harmony.
             </p>
           </div>
         </div>
       </div>
     </Banner>
   </section>
-  <section class="p-3 mx-auto my-14 lg:container">
+  <!-- <section class="p-3 mx-auto my-14 lg:container">
     <div
       class="w-full px-6 py-6 border-2 rounded-md shadow-md bg-opacity-70 bg-ayur-primary"
     >
@@ -153,7 +147,7 @@
       </div>
       <VideoTile primaryVideo={videos[0]} videos={videos.slice(1, 5)} />
     </div>
-  </section>
+  </section> -->
   <section class="container p-6 mx-auto my-10">
     <div class="w-full">
       <h3
@@ -167,20 +161,20 @@
         </span>
         <div slot="body">
           <Icon
-            label="Lorem ipsum dolor sit amet, consectetur adipiscing eli"
+            label="Saras Tower Thuppumpadi, Thalacode P.O, Mulanthuruthy Ernakulam, PIN-682314"
           >
             <i class="fa-solid fa-location-dot" />
           </Icon>
-          <Icon label="+91 2777-888-888">
+          <Icon label="+91 9632038278, +91 9633136484">
             <i class="fa-solid fa-mobile-screen-button" />
           </Icon>
-          <Icon label="ayur-contact@wonderlife123.com">
+          <Icon label="contact@wonderlife123.com">
             <i class="fa-solid fa-envelope" />
           </Icon>
         </div>
         <div slot="foot">
           <h3>Follow us</h3>
-          <div class="flex">
+          <!-- <div class="flex">
             <Icon>
               <i class="fa-brands fa-facebook" />
             </Icon>
@@ -190,7 +184,7 @@
             <Icon>
               <i class="fa-brands fa-instagram" />
             </Icon>
-          </div>
+          </div> -->
         </div>
       </ContactForm>
     </div>
@@ -201,7 +195,7 @@
   <section >
     <Footer>
       <div class="grid w-full gap-20 mb-6 md:m-3 md:flex">
-        <div class="w-full">
+        <!-- <div class="w-full">
           <h3 class="my-6 text-2xl font-semibold">Ayur Life</h3>
           <p class="max-w-full">
             Lorem ipsum dolor sit amet, consecteturHome adipiscing elit, sed do
@@ -210,14 +204,14 @@
             Pellentesque diam volutpat commodo rhoncus aenean vel elit
             scelerisque mauris pellentesque pulvinar.
           </p>
-        </div>
+        </div> -->
         <div class="w-full">
           <h3 class="my-6 text-2xl font-semibold">Quick Links</h3>
           <ul class="grid gap-3 list-none">
-            <li>Home</li>
+            <a href="#"><li >Home</li></a>
+            <!-- <li>placeholder</li>
             <li>placeholder</li>
-            <li>placeholder</li>
-            <li>placeholder</li>
+            <li>placeholder</li> -->
           </ul>
         </div>
       </div>
