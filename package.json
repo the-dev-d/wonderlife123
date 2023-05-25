@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"deploy-test": "npm run build && npx gh-pages -d build",
-		"dev": "vite dev",
+		"dev": "vite dev --host",
 		"build": "vite build",
 		"build-test": "vite build --base='/wonderlife/'",
 		"preview": "vite preview",

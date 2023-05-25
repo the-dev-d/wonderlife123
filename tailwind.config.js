@@ -9,10 +9,15 @@ export default {
           darker: "#557935",
           accent: "#edf9e3",
           text: "#6C6C6C"
+        },
+        wonder: {
+          primary: "#58C1C1",
+          darker: "#4da8a8"
         }
       },
       fontFamily: {
-        calligraffi: "'Bree Serif', serif"
+        bree: "'Bree Serif', serif",
+        calligraffi: "'Calligraffitti';"
       },
     },
   },

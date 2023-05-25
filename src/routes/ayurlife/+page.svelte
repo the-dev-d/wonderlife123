@@ -6,12 +6,6 @@
   import ContactForm from "../../components/ContactForm.svelte";
   import Footer from "../../components/Footer.svelte";
   import Icon from "../../components/Icon.svelte";
-  import { onMount } from "svelte";
-
-  onMount(()=> {
-    const fav = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
-    fav.href = "/ayur/ayur-life.webp";
-  })
 
   const videos = [
     "rmPp_P_Gqhw",
@@ -21,8 +15,11 @@
     "9pH9NI8Fubs",
   ];
 </script>
-<div>
-  <main class="w-full h-[70vh] md:h-[90vh]">
+<svelte:head>
+  <link rel="icon" href="/ayur/ayur-life.webp" />
+</svelte:head>
+<div class="bg-green-50">
+  <main class="w-full h-[50vh] md:h-[90vh]">
     <Banner>
       <div class="flex w-full h-full" slot="background">
         <img
@@ -37,7 +34,7 @@
         />
       </div>
       <div slot="foreground" class="grid content-center h-full px-6 md:w-1/2">
-        <h3 class="text-xl text-white md:text-5xl">Ayur Life</h3>
+        <h3 class="text-3xl font-semibold text-white md:text-5xl">Ayur Life</h3>
         <h5 class="my-3 text-gray-200 md:text-xl">
           Ayurveda Harnessing Nature's Wisdom for Optimal Health and Balance.
         </h5>
@@ -52,7 +49,7 @@
           >
         </div>
       </div>
-      <Navbar slot="header" logo="ayur/ayur-life.webp" title="AYUR LIFE">
+      <Navbar class="text-ayur-primary" slot="header" logo="ayur/ayur-life.webp" title="AYUR LIFE">
         <ul
           slot="options"
           class="items-center justify-center hidden gap-5 font-semibold md:flex"
@@ -69,7 +66,7 @@
   <section class="container grid py-6 mx-auto my-10 place-items-center">
     <div class="w-full py-6 mx-auto lg:w-2/3">
       <h3 class="w-full mb-6 text-3xl font-semibold text-center">Ayur Life</h3>
-      <p class="m-6 text-center font-calligraffi">
+      <p class="m-6 text-center font-bree">
         AyurLife combines traditional Ayurvedic knowledge with modern advancements, offering a comprehensive range of therapies, treatments, 
         and personalized wellness programs. Our team of highly skilled Ayurvedic practitioners, therapists, and wellness experts are dedicated to guiding 
         individuals on a journey towards optimal health and vitality.
@@ -80,7 +77,7 @@
   <!-- the hover tiles  -->
   <section class="container mx-auto my-10 mb-20">
     <h4
-      class="p-1 mx-auto my-8 text-xl font-semibold text-center border-b-4 w-fit md:text-3xl border-ayur-primary text-ayur-primary"
+      class=" mx-auto my-8 font-semibold text-center border-b-2 w-fit text-3xl border-ayur-primary text-ayur-primary"
     >
       The Wonder Life Family
     </h4>
@@ -160,21 +157,21 @@
       >
         Reach us
       </h3>
-      <ContactForm>
+      <ContactForm primaryClass="ayur-primary">
         <span class="grid" slot="head">
           <h4 class="font-semibold text-ayur-primary">Connect with Us</h4>
           <p class="text-sm text-ayur-text">Your Wellness Journey Begins Here. Reach out to AyurLife Today!</p>
         </span>
         <div slot="body">
-          <Icon
+          <Icon color="ayur-primary"
             label="Saras Tower Thuppumpadi, Thalacode P.O, Mulanthuruthy Ernakulam, PIN-682314"
           >
             <i class="fa-solid fa-location-dot" />
           </Icon>
-          <Icon label="+91 9632038278, +91 9633136484">
+          <Icon color="ayur-primary" label="+91 9632038278, +91 9633136484">
             <i class="fa-solid fa-mobile-screen-button" />
           </Icon>
-          <Icon label="contact@wonderlife123.in">
+          <Icon color="ayur-primary" label="contact@wonderlife123.in">
             <i class="fa-solid fa-envelope" />
           </Icon>
         </div>
@@ -196,10 +193,11 @@
     </div>
   </section>
   <section>
-    <img class="object-cover w-2/3 lg:w-1/3" src="ayur/decor.webp" alt="">
+    <img class="object-cover mix-blend-multiply w-2/3 lg:w-1/3" src="ayur/decor.webp" alt="">
   </section>
   <section >
-    <Footer>
+    <Footer color="green-900">
+      <!-- bg-green-900 -->
       <div class="grid w-full gap-20 mb-6 md:m-3 md:flex">
         <!-- <div class="w-full">
           <h3 class="my-6 text-2xl font-semibold">Ayur Life</h3>
@@ -215,6 +213,7 @@
           <h3 class="my-6 text-2xl font-semibold">Quick Links</h3>
           <ul class="grid gap-3 list-none">
             <a href="/"><li >Home</li></a>
+            <a href="/ayurlife"><li >Ayur Life</li></a>
             <!-- <li>placeholder</li>
             <li>placeholder</li>
             <li>placeholder</li> -->
