@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="w-full md:w-2/5">
-        <form bind:this={emailForm} class="grid gap-8 p-2 bg-white border-2 border-gray-200 rounded-md shadow-md bg-opacity-60 lg:p-8" on:submit|preventDefault={sendToMail}>
+        <form bind:this={emailForm} class="grid gap-4 p-4 bg-white border-2 border-gray-200 rounded-md shadow-md bg-opacity-60" on:submit|preventDefault={sendToMail}>
             <div>
                 <input
                 type="text"
