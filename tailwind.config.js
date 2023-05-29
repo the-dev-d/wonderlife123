@@ -13,6 +13,13 @@ export default {
         wonder: {
           primary: "#58C1C1",
           darker: "#4da8a8"
+        },
+        holistic: {
+          primary: "#DCAD81",
+          darker: "#BB916B"
+        },
+        nature: {
+          primary: "#70D881"
         }
       },
       fontFamily: {

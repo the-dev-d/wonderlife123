@@ -77,26 +77,35 @@
   <!-- the hover tiles  -->
   <section class="container mx-auto my-10 mb-20">
     <h4
-      class=" mx-auto my-8 font-semibold text-center border-b-2 w-fit text-3xl border-ayur-primary text-ayur-primary"
+      class="mx-auto my-8 text-3xl font-semibold text-center border-b-2 w-fit border-ayur-primary text-ayur-primary"
     >
       The Wonder Life Family
     </h4>
     <div class="flex w-full gap-2 p-3 md:mx-auto md:w-2/3">
-      <HoverBox
-        image="ayur/ayurmix.webp"
+      <a class="w-full" href="ayurlife">
+        <HoverBox
+        image="wonder/ic1.webp"
         beforeText="1"
         afterText="Ayur Life"
+        color="ayur-primary"
       />
-      <HoverBox
-        image="ayur/ayurmix.webp"
+      </a>
+      <a class="w-full" href="naturelife">
+        <HoverBox
+        image="wonder/ic2.webp"
         beforeText="2"
         afterText="Nature Life"
+        color="nature-primary"
       />
-      <HoverBox
-        image="ayur/ayurmix.webp"
+      </a>
+      <a class="w-full" href="holisticlife">
+        <HoverBox
+        image="wonder/ic3.webp"
         beforeText="3"
         afterText="Holistic Life"
+        color="holistic-primary"
       />
+      </a>
     </div>
   </section>
 
@@ -160,7 +169,7 @@
       <ContactForm primaryClass="ayur-primary">
         <span class="grid" slot="head">
           <h4 class="font-semibold text-ayur-primary">Connect with Us</h4>
-          <p class="text-sm text-ayur-text">Your Wellness Journey Begins Here. Reach out to AyurLife Today!</p>
+          <p class="text-sm text-ayur-text">Your Wellness Journey Begins Here. Reach out to Wonder Life Today!</p>
         </span>
         <div slot="body">
           <Icon color="ayur-primary"
@@ -193,7 +202,7 @@
     </div>
   </section>
   <section>
-    <img class="object-cover mix-blend-multiply w-2/3 lg:w-1/3" src="ayur/decor.webp" alt="">
+    <img class="object-cover w-2/3 mix-blend-multiply lg:w-1/3" src="ayur/decor.webp" alt="">
   </section>
   <section >
     <Footer color="green-900">

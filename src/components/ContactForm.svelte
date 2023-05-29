@@ -37,8 +37,8 @@
             <slot name="foot" />
         </div>
     </div>
-    <div class="w-full md:w-1/2">
-        <form bind:this={emailForm} class="grid gap-10 p-6 border-2 border-gray-200 rounded-md shadow-md lg:p-10" on:submit|preventDefault={sendToMail}>
+    <div class="w-full md:w-2/5">
+        <form bind:this={emailForm} class="grid gap-8 p-2 bg-white border-2 border-gray-200 rounded-md shadow-md bg-opacity-60 lg:p-8" on:submit|preventDefault={sendToMail}>
             <div>
                 <input
                 type="text"
@@ -49,7 +49,7 @@
             <span class="mx-1 text-sm text-red-400">{nameErr}</span>
             </div>
            <div class="relative">
-                <div class="limi absolute right-0 bottom-0 m-3 opacity-40 text-sm">{chars.length}/600</div>
+                <div class="absolute bottom-0 right-0 m-3 text-sm limi opacity-40">{chars.length}/600</div>
                 <textarea
                 class="w-full h-64 p-3 transition-colors border-2 rounded-md resize-none border-{primaryClass} border-opacity-20 focus:border-opacity-60 focus:outline-none bg-{primaryClass} bg-opacity-10"
                 name="body"

@@ -21,10 +21,10 @@
   <div class="bg-teal-50">
     <main class="w-full h-[50vh] md:h-[90vh] relative z-10">
       <Banner>
-        <div class="flex w-full h-full relative" slot="background">
-          <img class="w-1/3 object-cover object-bottom brightness-75" src="/wonder/b1.png" alt="">
-          <img class="w-1/3 object-cover object-left brightness-75" src="/wonder/b2.png" alt="">
-          <img class="w-1/3 object-cover object-left brightness-75" src="/wonder/b3.png" alt="">
+        <div class="relative flex w-full h-full" slot="background">
+          <img class="object-cover object-bottom w-1/3 brightness-75" src="/wonder/b1.png" alt="">
+          <img class="object-cover object-left w-1/3 brightness-75" src="/wonder/b2.png" alt="">
+          <img class="object-cover object-left w-1/3 brightness-75" src="/wonder/b3.png" alt="">
           <div class="absolute w-full h-full bg-teal-300 bg-opacity-5"></div>
         </div>
         <div slot="foreground" class="grid content-center h-full px-6 md:w-1/2">
@@ -43,7 +43,7 @@
             >
           </div>
         </div>
-        <Navbar class="text-wonder-primary" slot="header" logo="ayur/ayur-life.webp" title="WONDER LIFE">
+        <Navbar class="text-wonder-primary" slot="header" logo="" title="WONDER LIFE">
           <ul
             slot="options"
             class="items-center justify-center hidden gap-5 font-semibold md:flex"
@@ -60,12 +60,11 @@
     <section class="container grid py-6 mx-auto my-10 place-items-center">
       <div class="w-full py-6 mx-auto lg:w-2/3">
         <h3 class="w-full mb-6 text-3xl font-semibold text-center">Wonder Life</h3>
-        <p class="m-6 text-justify lg:text-center font-bree">
+        <p class="mx-6 text-justify lg:text-left font-bree">
             At Wonder Life, we believe that true healing encompasses the physical, mental, and spiritual aspects of an individual.
-            By combining the wisdom and practices of these three disciplines:
+            By combining the wisdom and practices of these three disciplines: <span class="mx-auto text-lg "><a href="ayurlife"> 1. Ayurveda, </a> <a href="naturelife">2. Naturopathy,</a> <a href="holisticlife">3. Homeopathy.</a> </span> 
         </p> 
-        <p class="m-6 text-justify lg:text-center font-bree">  <span class="mx-auto text-xl "><a href="ayurlife" class="hover:underline text-ayur-primary"> 1. Ayurveda, </a> <span class="text-lime-400">2. Naturopathy, </span> <span class="text-amber-400">3. Homeopathy.</span></span> </p>
-        <p class="m-6 text-justify font-bree"> we offer a unique and comprehensive approach to healthcare. 
+        <p class="mx-6 mt-2 text-justify font-bree"> we offer a unique and comprehensive approach to healthcare. 
             Our team of experienced practitioners collaborates seamlessly to provide personalized treatment plans that honor the individual's unique constitution and needs.
         </p>
       </div>
@@ -74,24 +73,35 @@
     <!-- the hover tiles  -->
     <section class="container mx-auto my-10 mb-20">
       <h4
-        class=" mx-auto my-8 text-3xl font-semibold text-center border-b-2 w-fit border-wonder-primary text-wonder-primary"
+        class="mx-auto my-8 text-3xl font-semibold text-center border-b-2 w-fit border-wonder-primary text-wonder-primary"
       >
         The Wonder Life Family
       </h4>
       <div class="flex w-full gap-2 p-3 md:mx-auto md:w-2/3">
         <a class="w-full" href="ayurlife">
-            <HoverBox image="ayur/ayurmix.webp" beforeText="1" afterText="Ayur Life"/>
+          <HoverBox
+          image="wonder/ic1.webp"
+          beforeText="1"
+          afterText="Ayur Life"
+          color="ayur-primary"
+        />
         </a>
-        <HoverBox
-          image="ayur/ayurmix.webp"
+        <a class="w-full" href="naturelife">
+          <HoverBox
+          image="wonder/ic2.webp"
           beforeText="2"
           afterText="Nature Life"
+          color="nature-primary"
         />
-        <HoverBox
-          image="ayur/ayurmix.webp"
+        </a>
+        <a class="w-full" href="holisticlife">
+          <HoverBox
+          image="wonder/ic3.webp"
           beforeText="3"
           afterText="Holistic Life"
+          color="holistic-primary"
         />
+        </a>
       </div>
     </section>
   
@@ -119,7 +129,7 @@
                 the benefits and efficacy of various alternative treatment modalities. 
                 This knowledge allows us to make more informed choices about our health and well-being.
               </p>
-              <p class="my-3  text-lg text-justify lg:text-left">
+              <p class="my-3 text-lg text-justify lg:text-left">
                 One significant achievement in the field of health would be the development and implementation of an 
                 integrated treatment plan that combines the strengths of different health treatment systems, 
                 including Ayurveda, Naturopathy, and Homeopathy. By integrating these systems, we can harness the unique principles and practices of each to create a comprehensive and personalized approach to healthcare.
@@ -157,13 +167,13 @@
       <h3 class="my-10 text-3xl font-bold border-b-2 border-wonder-primary text-wonder-primary">
           Our Treatment Approach
       </h3>
-      <h3 class="tracking-wide my-6">Our approach of treatment is rooted in the principles of Integrative Medicine</h3>
+      <h3 class="my-6 tracking-wide">Our approach of treatment is rooted in the principles of Integrative Medicine</h3>
       <p class="mt-5 text-justify lg:text-left">
         Integrative Medicine focuses on you as a whole person and not just your illness or disease. While it seeks to understand the underlying cause of your symptoms or condition, it does so by looking at your complete mind, body and spirit.  
         Who are the beneficiaries of integrative medicines?
         Many people can benefit from integrative medicines, including healthy people. People with long-lasting (chronic) or complex conditions may especially find the approach helpful. Integrative medicine can help you find relief for many health and medical conditions, including:
       </p>
-      <ul class="list-disc list-inside my-3 marker:text-wonder-primary text-slate-600 font-semibold">
+      <ul class="my-3 font-semibold list-disc list-inside marker:text-wonder-primary text-slate-600">
         <li> Autoimmune diseases. </li>
         <li> Acute and chronic pain. </li>
         <li> Breathing disorders. </li>
@@ -191,7 +201,7 @@
         <ContactForm primaryClass="wonder-primary">
           <span class="grid" slot="head">
             <h4 class="font-semibold text-wonder-primary">Connect with Us</h4>
-            <p class="text-sm text-ayur-text">Your Wellness Journey Begins Here. Reach out to AyurLife Today!</p>
+            <p class="text-sm text-ayur-text">Your Wellness Journey Begins Here. Reach out to Wonder Life Today!</p>
           </span>
           <div slot="body">
             <Icon color="wonder-primary"
