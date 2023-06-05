@@ -16,6 +16,7 @@
   ];
 </script>
 <svelte:head>
+  <title>Holistic Life</title>
   <link rel="icon" href="/ayur/ayur-life.webp" />
 </svelte:head>
 <div class="bg-amber-50">
@@ -49,7 +50,7 @@
           >
         </div>
       </div>
-      <Navbar class="text-holistic-primary" slot="header" logo="ayur/ayur-life.webp" title="HOLISTIC LIFE">
+      <Navbar class="text-holistic-primary" slot="header" title="HOLISTIC LIFE">
         <ul
           slot="options"
           class="items-center justify-center hidden gap-5 font-semibold md:flex"
@@ -230,6 +231,8 @@
           <ul class="grid gap-3 list-none">
             <a href="/"><li >Home</li></a>
             <a href="/ayurlife"><li >Ayur Life</li></a>
+            <a href="/naturelife"><li >Nature Life</li></a>
+            <a href="/holisticlife"><li >Holistic Life</li></a>
             <!-- <li>placeholder</li>
             <li>placeholder</li>
             <li>placeholder</li> -->

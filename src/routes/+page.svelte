@@ -16,6 +16,7 @@
     ];
   </script>
   <svelte:head>
+    <title>Wonder Life</title>
     <link rel="icon" href="/ayur/ayur-life.webp" />
   </svelte:head>
   <div class="bg-teal-50">
@@ -255,6 +256,8 @@
             <ul class="grid gap-3 list-none">
               <a href="/"><li >Home</li></a>
               <a href="/ayurlife"><li >Ayur Life</li></a>
+              <a href="/naturelife"><li >Nature Life</li></a>
+              <a href="/holisticlife"><li >Holistic Life</li></a>
               <!-- <li>placeholder</li>
               <li>placeholder</li>
               <li>placeholder</li> -->
