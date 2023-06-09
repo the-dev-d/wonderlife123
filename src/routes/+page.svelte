@@ -23,9 +23,9 @@
     <main class="w-full h-[50vh] md:h-[90vh] relative z-10">
       <Banner>
         <div class="relative flex w-full h-full" slot="background">
-          <img class="object-cover object-bottom w-1/3 brightness-75" src="/wonder/b1.png" alt="">
-          <img class="object-cover object-left w-1/3 brightness-75" src="/wonder/b2.png" alt="">
-          <img class="object-cover object-left w-1/3 brightness-75" src="/wonder/b3.png" alt="">
+          <img class="object-cover object-bottom w-1/3 brightness-75" src="/wonder/b1.webp" alt="">
+          <img class="object-cover object-left w-1/3 brightness-75" src="/wonder/b2.webp" alt="">
+          <img class="object-cover object-left w-1/3 brightness-75" src="/wonder/b3.webp" alt="">
           <div class="absolute w-full h-full bg-teal-300 bg-opacity-5"></div>
         </div>
         <div slot="foreground" class="grid content-center h-full px-6 md:w-1/2">

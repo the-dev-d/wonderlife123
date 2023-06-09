@@ -4,7 +4,7 @@
 	"scripts": {
 		"deploy-test": "npm run build && npx gh-pages -d build",
 		"dev": "vite dev",
-		"deploy": "touch build/.nojekyll && gh-pages -d build -t true",
+		"deploy": "touch build/.nojekyll && echo 'wonderlife123.in' > build/CNAME &&gh-pages -d build -t true",
 		"build": "vite build",
 		"build-test": "vite build --base='/wonderlife/'",
 		"preview": "vite preview",

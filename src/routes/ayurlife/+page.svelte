@@ -208,24 +208,26 @@
   <section >
     <Footer color="green-900">
       <!-- bg-green-900 -->
-      <div class="grid w-full gap-20 mb-6 md:m-3 md:flex">
-        <!-- <div class="w-full">
-          <h3 class="my-6 text-2xl font-semibold">Ayur Life</h3>
-          <p class="max-w-full">
-            Lorem ipsum dolor sit amet, consecteturHome adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus
-            id interdum velit laoreet id. Scelerisque varius morbi enim nunc.
-            Pellentesque diam volutpat commodo rhoncus aenean vel elit
-            scelerisque mauris pellentesque pulvinar.
-          </p>
-        </div> -->
-        <div class="w-full">
+      <div class="grid w-full gap-12 md:flex" >
+        <div>
           <h3 class="my-6 text-2xl font-semibold">Quick Links</h3>
           <ul class="grid gap-3 list-none">
             <a href="/"><li >Home</li></a>
             <a href="/ayurlife"><li >Ayur Life</li></a>
             <a href="/naturelife"><li >Nature Life</li></a>
             <a href="/holisticlife"><li >Holistic Life</li></a>
+            <!-- <li>placeholder</li>
+            <li>placeholder</li>
+            <li>placeholder</li> -->
+          </ul>
+        </div>
+        <div>
+          <h3 class="my-6 text-2xl font-semibold">Articles</h3>
+          <ul class="grid gap-3 list-none">
+            <a href="/ayur/articles/Dr%20Padmaja%20Ramachandran%20Article%20-%20April%20-%202021.pdf"><li class="text-sm" >Dr Padmaja Ramachandran Article - April - 2021</li></a>
+            <a href="/ayur/articles/IMPORTANCE%20OF%20LANGHANA%20IN%20METABOLIC%20SYNDROMS.pdf"><li class="text-sm" >IMPORTANCE OF LANGHANA IN METABOLIC SYNDROMS</li></a>
+            <a href="/ayur/articles/Article%20-%20Calcitriol.pdf"><li class="text-sm" >Article - Calcitriol</li></a>
+            <a href="/ayur/articles/Is%20DECODING%20AYURVEDA%20possible.pdf"><li class="text-sm" >Is  DECODING AYURVEDA possible</li></a>
             <!-- <li>placeholder</li>
             <li>placeholder</li>
             <li>placeholder</li> -->
